@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6E6E6"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/i_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dddss"
+        />
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i_head"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        
+        >
+     
+<TextView
+    android:id="@+id/tv_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+   
+    android:text="账号" />
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+       
+        android:background="@null" 
+         />
+
+
+
+    
+
+    <TextView
+        android:id="@+id/tv2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="密码"
+        
+        />、
+<EditText
+    android:id="@+id/et_p"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/tv2_name"
+    android:layout_marginLeft="5dp"
+    android:inputType="textPassword"
+    android:background="@null" />
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/layout"
+    android:background="#3c8dc4"
+    android:text="登陆" />
+
+<CheckBox
+    android:id="@+id/cB1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:text="记住号码" />
+
+</RelativeLayout>
